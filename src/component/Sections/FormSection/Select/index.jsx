@@ -1,11 +1,15 @@
-export const Select = () => {
-    
-    <div>
-    <label>Tipo de valor</label>
-    <select className="select" name="typeValue" id="typeValue" value={typeValue} onChange={(e) => setTypeValue(e.target.form.elements)}>
-        <option value="Entrada">Entrada</option>
-        <option value="Despesa">Despesa</option>
-    </select>
 
-</div>
+export const Select = ({ children, label, id, value, setValue }) => {
+    return (
+        <div>
+            <label htmlFor={id}>{label}</label>
+            <select>
+                name={id}
+                id={id}
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                {children}
+            </select>
+        </div>
+    )
 }
