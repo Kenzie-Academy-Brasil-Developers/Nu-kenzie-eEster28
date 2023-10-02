@@ -22,7 +22,7 @@ export const FinanceSection = ({ listFinances, removeFinance }) => {
                             />
                         })}
 
-                    </ul>) : <p>Você ainda não possui nenhum lançamento</p>}
+                    </ul>) : <p className="title4">Você ainda não possui nenhum lançamento</p>}
             </section>
         </>
     )

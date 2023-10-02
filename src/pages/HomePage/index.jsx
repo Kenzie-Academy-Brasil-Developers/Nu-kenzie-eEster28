@@ -14,7 +14,6 @@ export const HomePage = () => {
     const newFinance = { description, price, typeValue, id }
 
     setListFinances([...listFinances, newFinance])
-    console.log(listFinances)
   }
 
   const removeFinance = (id) => {
