@@ -36,3 +36,27 @@
         background-color: var(--color-grey2);
     }
 }
+
+@media (min-width: 768px) {
+    .cardFinance{
+     display: flex;
+     justify-content: space-between;
+     width: 22.5rem;
+     height:5.4375rem;
+    }
+
+    .price{
+        margin: 1.25rem 1rem 0rem 0rem; 
+        align-items: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cardFinance{
+     display: flex;
+     justify-content: space-between;
+     min-width: 35rem;
+     height: 5.4375rem;
+    }
+}
+

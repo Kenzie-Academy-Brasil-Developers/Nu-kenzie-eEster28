@@ -8,10 +8,13 @@ export const CardFinance = ({description, typeValue,price,removeFinance,id}) => 
         ${typeValue === "Despesa"? styles.gray : styles.green}`}>
             <div className={styles.description}>
                 <h2 className="title1">{description}</h2>
-                <span className="title3 typeValue">{typeValue}</span>
+                <span className="title3 typeValue">{typeValue}
+                </span>
             </div>
             <div className={styles.price}>
-                <span className="title3 ">{price}</span>
+                <span className="title3 ">
+                    {Number(price).toLocaleString("pt-br", {style:"currency", currency:"BRL"})}
+                </span>
                 <button onClick={()=> removeFinance(id)}>Excluir</button>
             </div>
         </li>

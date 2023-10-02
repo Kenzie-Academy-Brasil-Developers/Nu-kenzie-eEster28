@@ -13,6 +13,7 @@ export const FormSection = ({addFinance}) => {
         addFinance({description, price, typeValue})
         setDescription("")
         setPrice("")
+        setTypeValue("Esclha o tipo")
     }
 
     return (

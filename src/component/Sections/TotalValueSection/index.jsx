@@ -21,4 +21,4 @@ export const TotalValueSection = ({ listFinance }) => {
             </span>
         </section>
     )
-}
+} 
