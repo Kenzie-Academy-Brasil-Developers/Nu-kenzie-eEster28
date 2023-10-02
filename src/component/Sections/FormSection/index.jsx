@@ -6,14 +6,13 @@ import styles from "./style.module.scss"
 export const FormSection = ({addFinance}) => {
     const [description, setDescription] = useState("")
     const [price, setPrice] = useState("")
-    const [typeValue, setTypeValue] = useState("")
+    const [typeValue, setTypeValue] = useState("Entrada")
 
     const submit = (e) => {
         e.preventDefault()
         addFinance({description, price, typeValue})
         setDescription("")
         setPrice("")
-        setTypeValue("Esclha o tipo")
     }
 
     return (

@@ -11,6 +11,7 @@ export const CardFinance = ({description, typeValue,price,removeFinance,id}) => 
                 <span className="title3 typeValue">{typeValue}
                 </span>
             </div>
+
             <div className={styles.price}>
                 <span className="title3 ">
                     {Number(price).toLocaleString("pt-br", {style:"currency", currency:"BRL"})}
