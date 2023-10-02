@@ -1,0 +1,24 @@
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    label{
+        margin-top: 1rem;
+    }
+
+    input{
+        max-width: 19.625rem;
+        height: 3.3125rem;
+        padding: 0rem 0rem 0rem 0.9375rem;
+        margin:0.3rem 0rem 0.7rem 0rem;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        font-family: var(--font-family-2);
+        font-weight: 400;
+        border:none;
+        color: var(--color-grey2);
+        background-color: var(--color-grey1);
+        border-radius: 0.5rem;
+    }
+}

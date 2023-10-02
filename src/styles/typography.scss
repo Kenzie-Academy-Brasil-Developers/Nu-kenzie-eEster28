@@ -1,21 +1,27 @@
-.title1{
-    font-size: 2.375rem;
-    font-weight: bold;
+.title1 {
+    font-size: 1rem;
+    font-weight: 700;
     font-family: var(--font-family);
     color: var(--color-grey4);
+    line-height: 1.875rem;
 }
 
-.title2{
-    font-size: 2.375rem;
-    font-weight: bold;
-    font-family: var(--font-family);
+.title2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: var(--font-family-2);
     color: var(--color-grey4);
+    line-height: 1.375rem;
 }
 
-.title3{
-    font-size: 2.375rem;
-    font-weight: bold;
+.title3 {
+    font-size: 0.75rem;
+    font-weight: 400;
     font-family: var(--font-family);
     color: var(--color-grey4);
+
+    &.typeValue {
+        color: var(--color-grey3);
+    }
 }
 

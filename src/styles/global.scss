@@ -1,5 +1,4 @@
 :root{
-
     --color-primary: #FD377E;
     --color-primary-2:#E34981;
     --color-secondary: #03B898;
@@ -11,4 +10,10 @@
 
     --font-family: 'Nunito',sans-serif ;
     --font-family-2: 'Inter',sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

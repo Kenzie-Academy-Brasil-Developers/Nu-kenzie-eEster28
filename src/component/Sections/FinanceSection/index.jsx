@@ -1,5 +1,6 @@
 import { TotalValueSection } from "../TotalValueSection"
 import { CardFinance } from "./CardFinance"
+import styles from "./style.module.scss"
 
 export const FinanceSection = ({listFinances,removeFinance}) => {
 
@@ -7,8 +8,8 @@ export const FinanceSection = ({listFinances,removeFinance}) => {
         <>
         {listFinances.length > 0  && <TotalValueSection listFinance={listFinances} /> }
 
-        <section>
-            <h2>Resumo financeiro</h2>
+        <section className={styles.conteiner}>
+            <h2 className="title1">Resumo financeiro</h2>
           
                 {listFinances.length > 0 ?(
             <ul>
@@ -18,7 +19,7 @@ export const FinanceSection = ({listFinances,removeFinance}) => {
                         key={finance.id}
                         description={finance.description}
                         typeValue={finance.typeValue}
-                        price={finance.price}
+                        price={(finance.price).toLocaleString("pt-br", {style:"currency", currency:"BRL"})}
                         removeFinance={removeFinance}
                         id={finance.id}
                     />

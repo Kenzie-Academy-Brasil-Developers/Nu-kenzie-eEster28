@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Input } from "./Input"
 import { Select } from "./Select"
+import styles from "./style.module.scss"
 
 export const FormSection = ({addFinance}) => {
     const [description, setDescription] = useState("")
@@ -14,9 +15,8 @@ export const FormSection = ({addFinance}) => {
         setPrice("")
     }
 
-
     return (
-        <form onSubmit={submit}>
+        <form className={styles.form} onSubmit={submit}>
             <div>
             <Input
                 label="Descrição" 
@@ -26,14 +26,14 @@ export const FormSection = ({addFinance}) => {
                 value={description}
                 setValue= {setDescription}
             />
-            <span>Ex: Comprar roupas</span>
+            <span className={`title3 typeValue ${styles.exemplo}`}>Ex: Comprar roupas</span>
             </div>
 
             <Input
                 label="Valor (R$)" 
                 type="number"
                 id="price" 
-                placeholder="" 
+                placeholder="1" 
                 value={price}
                 setValue={setPrice}
             />
@@ -50,4 +50,4 @@ export const FormSection = ({addFinance}) => {
             <button type="submit">Inserir valor</button>
         </form>
     )
- }
+ } 
