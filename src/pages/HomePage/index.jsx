@@ -31,7 +31,6 @@ export const HomePage = () => {
     setListFinances(listFiltered)
   }
 
-
   return (
     <>
       <Header />
