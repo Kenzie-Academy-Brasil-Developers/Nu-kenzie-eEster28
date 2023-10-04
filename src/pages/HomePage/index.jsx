@@ -12,8 +12,14 @@ export const HomePage = () => {
   const addFinance = ({ description, price, typeValue }) => {
     const id = crypto.randomUUID()
     const newFinance = { description, price, typeValue, id }
+   
 
-    setListFinances([...listFinances, newFinance])
+    if(description !== "" && price !== ""){
+      setListFinances([...listFinances, newFinance])
+
+    }else{
+      alert("Preencha os campos necessários!")
+    }
   }
 
   const removeFinance = (id) => {
